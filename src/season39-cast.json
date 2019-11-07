@@ -1,0 +1,202 @@
+[
+  {
+    "id": "aaron",
+    "profile": {
+      "firstName": "Aaron",
+      "lastName": "Meredith"
+    },
+    "currentTribe": "vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "chelsea",
+    "profile": {
+      "firstName": "Chelsea",
+      "lastName": "Walker"
+    },
+    "currentTribe": "lairo",
+    "hasFire": false,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "dan",
+    "profile": {
+      "firstName": "Dan",
+      "lastName": "Spilo"
+    },
+    "currentTribe": "Vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "dean",
+    "profile": {
+      "firstName": "Dean",
+      "lastName": "Kowalski"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "elaine",
+    "profile": {
+      "firstName": "Elaine",
+      "lastName": "Stott"
+    },
+    "currentTribe": "vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "elizabeth-beisel",
+    "profile": {
+      "firstName": "Elizabeth",
+      "lastName": "Beisel"
+    },
+    "currentTribe": "vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "jack",
+    "profile": {
+      "firstName": "Jack",
+      "lastName": "Nichting"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "jamal",
+    "profile": {
+      "firstName": "Jamal",
+      "lastName": "Shipman"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "janet",
+    "profile": {
+      "firstName": "Janet",
+      "lastName": "Corbin"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "jason",
+    "profile": {
+      "firstName": "Jason",
+      "lastName": "Linden"
+    },
+    "currentTribe": "vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "karishma",
+    "profile": {
+      "firstName": "Karishma",
+      "lastName": "Patel"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "kellee",
+    "profile": {
+      "firstName": "Kellee",
+      "lastName": "Kim"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "lauren",
+    "profile": {
+      "firstName": "Lauren",
+      "lastName": "Beck"
+    },
+    "currentTribe": "vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "missy",
+    "profile": {
+      "firstName": "Missy",
+      "lastName": "Byrd"
+    },
+    "currentTribe": "vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "molly-byman",
+    "profile": {
+      "firstName": "Molly",
+      "lastName": "Byman"
+    },
+    "currentTribe": "Vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "noura",
+    "profile": {
+      "firstName": "Noura",
+      "lastName": "Salman"
+    },
+    "currentTribe": "Vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "ronnie",
+    "profile": {
+      "firstName": "Ronnie",
+      "lastName": "Bardah"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "tom",
+    "profile": {
+      "firstName": "Tom",
+      "lastName": "Laidlaw"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "tommy",
+    "profile": {
+      "firstName": "Tommy",
+      "lastName": "Sheehan"
+    },
+    "currentTribe": "vokai",
+    "hasFire": true,
+    "hiddenIdols": 0
+  },
+  {
+    "id": "vince",
+    "profile": {
+      "firstName": "Vince",
+      "lastName": "Moua"
+    },
+    "currentTribe": "lairo",
+    "hasFire": true,
+    "hiddenIdols": 0
+  }
+]

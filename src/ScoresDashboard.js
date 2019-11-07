@@ -1,26 +1,49 @@
 import React from 'react';
+import PlayerCardSmall from './components/PlayerCardSmall';
+
 import './global.css';
 import './index.css';
 
-function ScoresDashboard() {
+function getMembers(members, cast) {
+  return members.map(member => cast.find(m => m.id === member));
+}
+
+function Team(props) {
+  const { owner, members } = props;
+
+  return (
+    <section className="mb-6">
+      {/* Team Title */}
+      <div className="mb-4 pt-3">
+        <h2 className="text-2xl font-black">{owner}</h2>
+      </div>
+
+      {/* Team Players */}
+      <div className="flex -mx-2 mb-6">
+        <PlayerCardSmall player={members[0]} />
+        <PlayerCardSmall player={members[1]} />
+      </div>
+      <div className="flex -mx-2">
+        <PlayerCardSmall player={members[2]} />
+        <PlayerCardSmall player={members[3]} />
+      </div>
+    </section>
+  );
+}
+
+function ScoresDashboard(props) {
+  const { season, cast, tribes, ourGame } = props;
+
   return (
     <div className="container mx-auto p-4 pt-8">
-      <div className="flex mb-6">
-        <p className="flex-1 text-2xl font-black text-gray-200">Carolyn</p>
-        <p className="flex-2 text-2xl font-bold text-gray-200 text-right bg-gray-700 rounded-full pl-4 pr-4">
-          0<span className="text-gray-500 font-bold text-sm"> pts</span>
-        </p>
-      </div>
-      <div className="flex mb-4">
-        <div className="w-1/2 bg-gray-500 bg-blue-800 h-12 p-2">
-          <div className="flex bg-blue-500 h-8"/>
-        </div>
-        <div className="w-1/2 bg-gray-400 bg-blue-400 h-12 p-2">
-          <div className="flex bg-blue-500 h-8"/>
-
-        </div>
-      </div>
-    </div>
+      {ourGame.teams.map(team => {
+        const members = getMembers(team.members, cast);
+        console.log('members: ', members);
+        return (
+          <Team key={team.id} owner={team.owner} members={members} />
+        );
+      })}
+    </div >
   );
 }
 
