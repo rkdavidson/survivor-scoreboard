@@ -12,7 +12,7 @@ function Team(props) {
   const { owner, members } = props;
 
   return (
-    <section className="mb-6">
+    <section className="mb-12">
       {/* Team Title */}
       <div className="mb-4 pt-3">
         <h2 className="text-2xl font-black">{owner}</h2>
