@@ -23,12 +23,13 @@ function App() {
   return (
     <Router>
       <div>
-        {/* <div>
-        <img src="images/statues.jpg" />
-      </div> */}
+        <div>
+          <img src="images/statues.jpg" />
+          {/* <img src="images/season-logo.png" className="h-32" /> */}
+        </div>
 
         {/* Season info */}
-        <div className="mb-2 pt-6 pr-8 pl-8 pb-6 bg-blue-700">
+        <div className="mb-2 px-8 py-6 bg-blue-700">
           <p className="text-md leading-tight font-bold text-blue-300">
             {`Season ${season.number} • ${season.displayDate}`}
             <br />
