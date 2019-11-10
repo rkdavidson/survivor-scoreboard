@@ -61,6 +61,17 @@
           "elizabeth"
         ],
         "totalPoints": 0
+      },
+      {
+        "id": "bench",
+        "owner": "The Bench",
+        "members": [
+          "ronnie",
+          "dan",
+          "vince",
+          "chelsea"
+        ],
+        "totalPoints": 8
       }
     ]
   },
@@ -138,9 +149,9 @@
         "lastName": "Nichting"
       },
       "currentTribe": "lairo",
-      "hasFire": true,
+      "hasFire": false,
       "hiddenIdols": 0,
-      "points": 0
+      "points": 7
     },
     {
       "id": "jamal",
@@ -171,7 +182,7 @@
         "lastName": "Linden"
       },
       "currentTribe": "vokai",
-      "hasFire": true,
+      "hasFire": false,
       "hiddenIdols": 0,
       "points": 6
     },
@@ -226,7 +237,7 @@
         "lastName": "Byman"
       },
       "currentTribe": "Vokai",
-      "hasFire": true,
+      "hasFire": false,
       "hiddenIdols": 0,
       "points": 2
     },
@@ -248,7 +259,7 @@
         "lastName": "Bardah"
       },
       "currentTribe": "lairo",
-      "hasFire": true,
+      "hasFire": false,
       "hiddenIdols": 0,
       "points": 1
     },
@@ -259,7 +270,7 @@
         "lastName": "Laidlaw"
       },
       "currentTribe": "lairo",
-      "hasFire": true,
+      "hasFire": false,
       "hiddenIdols": 0,
       "points": 2
     },
