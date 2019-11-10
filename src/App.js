@@ -1,10 +1,17 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import './global.css';
 import './index.css';
 
 import seasonData from './season-39.json';
 
-import ScoresDashboard from './ScoresDashboard';
+import ScoresDashboard from './views/ScoresDashboard';
 
 const {
   season,
@@ -15,30 +22,43 @@ const {
 
 function App() {
   return (
-    <div>
-      {/* <div>
+    <Router>
+      <div>
+        {/* <div>
         <img src="images/statues.jpg" />
       </div> */}
 
-      {/* Season info */}
-      <div className="mb-2 pt-6 pr-8 pl-8 pb-6 bg-blue-700">
-        <p className="text-md leading-tight font-bold text-blue-300">
-          {`Season ${season.number} • ${season.displayDate}`}
-          <br />
-          <span className="text-3xl font-extrabold text-gray-200">
-            {season.name}
-          </span>
-        </p>
-      </div>
+        {/* Season info */}
+        <div className="mb-2 pt-6 pr-8 pl-8 pb-6 bg-blue-700">
+          <p className="text-md leading-tight font-bold text-blue-300">
+            {`Season ${season.number} • ${season.displayDate}`}
+            <br />
+            <span className="text-3xl font-extrabold text-gray-200">
+              {season.name}
+            </span>
+          </p>
+        </div>
 
-      <ScoresDashboard
-        season={season}
-        tribes={tribes}
-        cast={cast}
-        ourGame={ourGame}
-      />
-      <pre>{JSON.stringify(seasonData, null, 2)}</pre>
-    </div>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about">
+            <h2>About</h2>
+          </Route>
+          <Route path="/users">
+            <h2>Users</h2>
+          </Route>
+          <Route path="/">
+            <ScoresDashboard
+              season={season}
+              tribes={tribes}
+              cast={cast}
+              ourGame={ourGame}
+            />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

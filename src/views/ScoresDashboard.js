@@ -1,8 +1,6 @@
 import React from 'react';
-import PlayerCardSmall from './components/PlayerCardSmall';
 
-import './global.css';
-import './index.css';
+import PlayerCardSmall from '../components/PlayerCardSmall';
 
 function getMembers(members, cast) {
   return members.map(member => cast.find(m => m.id === member));
