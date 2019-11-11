@@ -25,7 +25,7 @@ function SeasonHeroHeader3({ season }) {
   return (
     <section className="border-b-2 border-blue-400">
       <Link to="/">
-        <img src="/images/masthead-3.jpg" />
+        <img src={`${process.env.PUBLIC_URL}/images/masthead-3.jpg`} alt="S39" />
       </Link>
 
       {/* Season info */}

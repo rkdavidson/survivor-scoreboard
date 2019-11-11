@@ -23,7 +23,7 @@ const { season, cast, tribes, ourGame } = SeasonData;
 
 function App() {
   return (
-    <Router>
+    <Router basename="survivor-scoreboard">
       <SeasonHeroHeader season={season} />
       {/* <SeasonHeader season={season} /> */}
 
@@ -33,7 +33,7 @@ function App() {
         <Route path="/player/:playerId">
           <PlayerBio cast={cast} />
         </Route>
-        <Route path="/">
+        <Route path={['/', '/scores']}>
           <ScoresDashboard
             season={season}
             tribes={tribes}

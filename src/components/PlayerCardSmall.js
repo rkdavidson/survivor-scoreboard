@@ -34,7 +34,7 @@ function PlayerCardSmall(props) {
         {/* Photo */}
         <img
           className="object-cover object-top h-40 w-full"
-          src={`/images/cast/${firstName}-${lastName}.jpg`}
+          src={`${process.env.PUBLIC_URL}/images/cast/${firstName}-${lastName}.jpg`}
           alt={`${firstName} ${lastName}`}
           style={!hasFire ? outPlayerPhotoStyle : undefined}
         />

@@ -32,7 +32,7 @@ function PlayerProfile({ player }) {
       <div className="flex relative justify-center items-end m-auto w-3/4 mb-6">
         <img
           className="object-cover rounded-lg object-center shadow-lg border-4"
-          src={`/images/cast/${firstName}-${lastName}.jpg`}
+          src={`${process.env.PUBLIC_URL}/images/cast/${firstName}-${lastName}.jpg`}
           alt={`${firstName} ${lastName}`}
           style={{
             borderColor: currentTribe.colors.light
