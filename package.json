@@ -1,7 +1,7 @@
 {
   "name": "survivor-scoreboard",
   "version": "0.1.0",
-  "homepage": "http://rkdavidson.github.io/survivor-scorecard",
+  "homepage": "http://rkdavidson.github.io/survivor-scoreboard",
   "private": true,
   "dependencies": {
     "react": "^16.11.0",

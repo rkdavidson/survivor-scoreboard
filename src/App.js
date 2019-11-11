@@ -24,8 +24,8 @@ const {
 function App() {
   return (
     <Router>
-      {/* <SeasonHeroHeader season={season} /> */}
-      <SeasonHeader season={season} />
+      <SeasonHeroHeader season={season} />
+      {/* <SeasonHeader season={season} /> */}
 
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
