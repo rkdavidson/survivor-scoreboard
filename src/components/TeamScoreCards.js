@@ -7,9 +7,13 @@ export default function TeamScoreCards(props) {
   const { owner, members, totalPoints, standing } = props;
 
   const sortedMembers = members.sort((a, b) => {
+    // Sort members in the game first
     if (a.hasFire && b.hasFire) return 0;
     if (!a.hasFire && b.hasFire) return 1;
     if (a.hasFire && !b.hasFire) return -1;
+
+    // Both members are out of the game
+    return (a.points > b.points) ? -1 : 1;
   });
   return (
     <section className="pb-8 mb-12 shadow-lg bg-gray-100">

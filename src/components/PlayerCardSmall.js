@@ -1,8 +1,8 @@
 import React from 'react';
 
 const outPlayerPhotoStyle = {
-  opacity: 0.8,
-  filter: 'saturate(10%) contrast(70%) brightness(110%)',
+  opacity: 0.70,
+  filter: 'saturate(8%) contrast(65%) brightness(115%)',
   userSelect: 'none'
 };
 
@@ -19,7 +19,7 @@ function PlayerCardSmall(props) {
   return (
     <div className="w-1/2 px-2 relative">
       <div
-        className="rounded-lg overflow-hidden shadow-md bg-white border-2 border-gray-500"
+        className="rounded-lg overflow-hidden shadow-md bg-white border-2 border-gray-400"
         style={hasFire ? { borderColor: currentTribe.colors.light } : undefined}
       >
         {/* Photo */}
@@ -31,7 +31,7 @@ function PlayerCardSmall(props) {
         />
 
         {/* Status Indicator */}
-        <div className={`absolute top-0 right-0 w-${hasFire ? '8' : '16'} h-8 flex justify-center items-center content-center -mt-3 -mr-1 rounded-full bg-orange-100 shadow`} >
+        <div className={`absolute top-0 right-0 w-${hasFire ? '8' : '16'} h-8 flex justify-center items-center content-center -mt-3 -mr-1 rounded-full bg-${hasFire ? 'orange-200' : 'white'} shadow`} >
           {hasFire && (
             <span className="text-lg font-bold text-center tracking-tighter">
               {'🔥'}
