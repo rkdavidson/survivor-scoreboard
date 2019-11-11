@@ -18,7 +18,10 @@ function PlayerCardSmall(props) {
 
   return (
     <div className="w-1/2 px-2 relative">
-      <div className="rounded overflow-hidden shadow-lg bg-white" style={{ borderColor: currentTribe.colors.light, borderWidth: '4px' }}>
+      <div
+        className="rounded-lg overflow-hidden shadow-md bg-white border-2 border-gray-500"
+        style={hasFire ? { borderColor: currentTribe.colors.light } : undefined}
+      >
         {/* Photo */}
         <img
           className="object-cover object-top h-40 w-full"
@@ -28,14 +31,14 @@ function PlayerCardSmall(props) {
         />
 
         {/* Status Indicator */}
-        <div className={`absolute top-0 right-0 w-${hasFire ? '8' : '12'} h-8 flex justify-center items-center content-center -mt-3 -mr-1 rounded-full bg-orange-100 shadow-sm`} >
+        <div className={`absolute top-0 right-0 w-${hasFire ? '8' : '16'} h-8 flex justify-center items-center content-center -mt-3 -mr-1 rounded-full bg-orange-100 shadow`} >
           {hasFire && (
             <span className="text-lg font-bold text-center tracking-tighter">
               {'🔥'}
             </span>
           )}
           {!hasFire && (
-            <span className="text-sm font-medium text-gray-900 text-center tracking-tighter">
+            <span className="text-md font-medium text-gray-900 text-center tracking-tighter">
               {points} pts
             </span>
           )}
@@ -43,18 +46,18 @@ function PlayerCardSmall(props) {
 
         {/* Player Details */}
         <div className={`p-2 pb-3 ${hasFire ? 'bg-white' : 'bg-gray-100'}`}>
-          <div className="flex justify-between content-center items-center mb-2">
+          <div className="flex justify-between content-center items-center">
             <p className="text-lg font-bold">{firstName} {'🗿'.repeat(hiddenIdols)}</p>
-            {/*<p className="text-lg font-bold leading-none">
-              <span className="rounded text-xs px-2 py-0 font-medium" style={{
+            <p className="text-lg font-bold leading-none">
+              <span className="rounded text-xs px-2 font-medium" style={{
                 'background': currentTribe.colors.light,
                 'color': currentTribe.colors.dark
               }}>
                 {currentTribe.name}
               </span>
-            </p>*/}
+            </p>
           </div>
-          <p className="text-xs font-medium text-gray-700">
+          <p className="text-xs font-medium text-gray-700 mt-2 hidden">
             <span className="font-bold">Age</span> <span>{age}</span><br />
             <span>{occupation}</span><br />
             <span>{currentResidence}</span><br />
