@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://rkdavidson.github.io/survivor-scoreboard/precache-manifest.616aff201586d4fab4853579611a387f.js"
+  "https://rkdavidson.github.io/survivor-scoreboard/precache-manifest.227deff69b33548c0b9a44d9d73ef81a.js"
 );
 
 self.addEventListener('message', (event) => {
