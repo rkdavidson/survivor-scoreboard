@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/survivor-scorecard/static/css/main.dcb08a8b.chunk.css",
-    "main.js": "/survivor-scorecard/static/js/main.e4bdba2e.chunk.js",
-    "main.js.map": "/survivor-scorecard/static/js/main.e4bdba2e.chunk.js.map",
-    "runtime-main.js": "/survivor-scorecard/static/js/runtime-main.bec31db6.js",
-    "runtime-main.js.map": "/survivor-scorecard/static/js/runtime-main.bec31db6.js.map",
-    "static/js/2.09ae0715.chunk.js": "/survivor-scorecard/static/js/2.09ae0715.chunk.js",
-    "static/js/2.09ae0715.chunk.js.map": "/survivor-scorecard/static/js/2.09ae0715.chunk.js.map",
-    "index.html": "/survivor-scorecard/index.html",
-    "precache-manifest.3c734473816691f7af215b65dbf94c70.js": "/survivor-scorecard/precache-manifest.3c734473816691f7af215b65dbf94c70.js",
-    "service-worker.js": "/survivor-scorecard/service-worker.js",
-    "static/css/main.dcb08a8b.chunk.css.map": "/survivor-scorecard/static/css/main.dcb08a8b.chunk.css.map"
+    "main.css": "/survivor-scoreboard/static/css/main.dcb08a8b.chunk.css",
+    "main.js": "/survivor-scoreboard/static/js/main.1116ee01.chunk.js",
+    "main.js.map": "/survivor-scoreboard/static/js/main.1116ee01.chunk.js.map",
+    "runtime-main.js": "/survivor-scoreboard/static/js/runtime-main.69b495ea.js",
+    "runtime-main.js.map": "/survivor-scoreboard/static/js/runtime-main.69b495ea.js.map",
+    "static/js/2.09ae0715.chunk.js": "/survivor-scoreboard/static/js/2.09ae0715.chunk.js",
+    "static/js/2.09ae0715.chunk.js.map": "/survivor-scoreboard/static/js/2.09ae0715.chunk.js.map",
+    "index.html": "/survivor-scoreboard/index.html",
+    "precache-manifest.00d7923e121feaec30faa8ec588d1b4c.js": "/survivor-scoreboard/precache-manifest.00d7923e121feaec30faa8ec588d1b4c.js",
+    "service-worker.js": "/survivor-scoreboard/service-worker.js",
+    "static/css/main.dcb08a8b.chunk.css.map": "/survivor-scoreboard/static/css/main.dcb08a8b.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.bec31db6.js",
+    "static/js/runtime-main.69b495ea.js",
     "static/js/2.09ae0715.chunk.js",
     "static/css/main.dcb08a8b.chunk.css",
-    "static/js/main.e4bdba2e.chunk.js"
+    "static/js/main.1116ee01.chunk.js"
   ]
 }
