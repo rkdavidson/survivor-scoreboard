@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SeasonHeroHeading({ season }) {
+function SeasonHeroHeader({ season }) {
   return (
     <section>
       <div>
@@ -21,4 +21,4 @@ function SeasonHeroHeading({ season }) {
   );
 }
 
-export default SeasonHeroHeading
+export default SeasonHeroHeader

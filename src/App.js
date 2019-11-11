@@ -11,7 +11,8 @@ import './index.css';
 import seasonData from './season-39.json';
 
 import ScoresDashboard from './views/ScoresDashboard';
-import SeasonHeroHeading from './components/SeasonHeroHeading';
+import SeasonHeroHeader from './components/SeasonHeroHeader';
+import SeasonHeader from './components/SeasonHeader';
 
 const {
   season,
@@ -23,7 +24,8 @@ const {
 function App() {
   return (
     <Router>
-      <SeasonHeroHeading season={season} />
+      {/* <SeasonHeroHeader season={season} /> */}
+      <SeasonHeader season={season} />
 
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
