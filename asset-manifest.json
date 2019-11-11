@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/survivor-scoreboard/static/css/main.dcb08a8b.chunk.css",
-    "main.js": "/survivor-scoreboard/static/js/main.1116ee01.chunk.js",
-    "main.js.map": "/survivor-scoreboard/static/js/main.1116ee01.chunk.js.map",
+    "main.js": "/survivor-scoreboard/static/js/main.3c93dc11.chunk.js",
+    "main.js.map": "/survivor-scoreboard/static/js/main.3c93dc11.chunk.js.map",
     "runtime-main.js": "/survivor-scoreboard/static/js/runtime-main.69b495ea.js",
     "runtime-main.js.map": "/survivor-scoreboard/static/js/runtime-main.69b495ea.js.map",
-    "static/js/2.09ae0715.chunk.js": "/survivor-scoreboard/static/js/2.09ae0715.chunk.js",
-    "static/js/2.09ae0715.chunk.js.map": "/survivor-scoreboard/static/js/2.09ae0715.chunk.js.map",
+    "static/js/2.333a81a7.chunk.js": "/survivor-scoreboard/static/js/2.333a81a7.chunk.js",
+    "static/js/2.333a81a7.chunk.js.map": "/survivor-scoreboard/static/js/2.333a81a7.chunk.js.map",
     "index.html": "/survivor-scoreboard/index.html",
-    "precache-manifest.00d7923e121feaec30faa8ec588d1b4c.js": "/survivor-scoreboard/precache-manifest.00d7923e121feaec30faa8ec588d1b4c.js",
+    "precache-manifest.994b613787316a2f140282bd04bf7554.js": "/survivor-scoreboard/precache-manifest.994b613787316a2f140282bd04bf7554.js",
     "service-worker.js": "/survivor-scoreboard/service-worker.js",
     "static/css/main.dcb08a8b.chunk.css.map": "/survivor-scoreboard/static/css/main.dcb08a8b.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.69b495ea.js",
-    "static/js/2.09ae0715.chunk.js",
+    "static/js/2.333a81a7.chunk.js",
     "static/css/main.dcb08a8b.chunk.css",
-    "static/js/main.1116ee01.chunk.js"
+    "static/js/main.3c93dc11.chunk.js"
   ]
 }

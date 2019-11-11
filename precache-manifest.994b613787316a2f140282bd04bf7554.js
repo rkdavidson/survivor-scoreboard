@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7bd3db32e850358cb307c15c3cd03033",
+    "revision": "a7758335c87821aec2e4142b586e93db",
     "url": "/survivor-scoreboard/index.html"
   },
   {
-    "revision": "ff00658204abcd99d346",
+    "revision": "2dcfcba165b8318e54e9",
     "url": "/survivor-scoreboard/static/css/main.dcb08a8b.chunk.css"
   },
   {
-    "revision": "d2ee0a0b5c6e44889e83",
-    "url": "/survivor-scoreboard/static/js/2.09ae0715.chunk.js"
+    "revision": "f5865d1502d59bb8c8fd",
+    "url": "/survivor-scoreboard/static/js/2.333a81a7.chunk.js"
   },
   {
-    "revision": "ff00658204abcd99d346",
-    "url": "/survivor-scoreboard/static/js/main.1116ee01.chunk.js"
+    "revision": "2dcfcba165b8318e54e9",
+    "url": "/survivor-scoreboard/static/js/main.3c93dc11.chunk.js"
   },
   {
     "revision": "bb0815d7e9a65fa3f41e",

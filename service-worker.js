@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/survivor-scoreboard/precache-manifest.00d7923e121feaec30faa8ec588d1b4c.js"
+  "/survivor-scoreboard/precache-manifest.994b613787316a2f140282bd04bf7554.js"
 );
 
 self.addEventListener('message', (event) => {
