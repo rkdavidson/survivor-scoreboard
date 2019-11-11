@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "af70e5cbfeee0ba9686facbe1ea0d0cd",
+    "revision": "228ae03b737b97d81b08ad57feae2f94",
     "url": "https://rkdavidson.github.io/survivor-scoreboard/index.html"
   },
   {
-    "revision": "48cc8d93198adb5d33f0",
+    "revision": "c1fa56ea73435c644197",
     "url": "https://rkdavidson.github.io/survivor-scoreboard/static/css/main.dcb08a8b.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.333a81a7.chunk.js"
   },
   {
-    "revision": "48cc8d93198adb5d33f0",
-    "url": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.602b6710.chunk.js"
+    "revision": "c1fa56ea73435c644197",
+    "url": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.50975837.chunk.js"
   },
   {
     "revision": "02dac7ccf3371279d0e7",
