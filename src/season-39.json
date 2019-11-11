@@ -260,8 +260,8 @@
         "firstName": "Karishma",
         "lastName": "Patel",
         "age": "37",
-        "hometown": "Hometown: Philadelphia",
-        "currentResidence": "Houston",
+        "hometown": "Philadelphia, PA",
+        "currentResidence": "Houston, TX",
         "occupation": "Personal Injury Lawyer",
         "threeWords": "Reliable, impulsive, and charismatic.",
         "selfBio": "I feel like I was born to play this game. I've always craved challenges that help me learn more about myself, and I know deep down that I do have the physical, mental, and social skills to outlast, outwit, and outplay anyone. My job and my life experiences have trained me exactly how to win. I am hungry to be out in the wild, pushing myself to the edge, and doing things I never dreamed I could do. In the end, surviving this game means something more valuable than money to me."
@@ -278,7 +278,7 @@
         "lastName": "Kim",
         "age": "29",
         "hometown": "Costa Mesa, California",
-        "currentResidence": "Philadelphia",
+        "currentResidence": "Philadelphia, PA",
         "occupation": "MBA Student",
         "threeWords": "Fun, energetic, and driven.",
         "selfBio": "My pain tolerance is high, and I love to make difficult things fun. With a pinch of luck and a good \"meat shield,\" I'll win."
@@ -379,7 +379,7 @@
         "firstName": "Tom",
         "lastName": "Laidlaw",
         "age": "60",
-        "hometown": "Brampton, Ontario, Canada",
+        "hometown": "🇨🇦 Brampton, Ontario",
         "currentResidence": "Greenwich, Connecticut",
         "occupation": "Former NHL Player",
         "threeWords": "Disciplined, dedicated, and stubborn.",

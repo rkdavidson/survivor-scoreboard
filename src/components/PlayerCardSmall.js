@@ -1,8 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+
+import PlayerFireStatus from './PlayerFireStatus';
+import { TribeNameSmall } from './TribeName';
 
 const outPlayerPhotoStyle = {
-  opacity: 0.70,
-  filter: 'saturate(8%) contrast(65%) brightness(115%)',
+  opacity: 0.8,
+  filter: 'grayscale(100%) contrast(65%) brightness(115%)',
   userSelect: 'none'
 };
 
@@ -13,11 +17,16 @@ function PlayerCardSmall(props) {
     currentTribe,
     hasFire,
     hiddenIdols,
-    points,
+    points
   } = props.player;
+  let history = useHistory();
+
+  function handleClick() {
+    history.push(`/player/${id}`);
+  }
 
   return (
-    <div className="w-1/2 px-2 relative">
+    <div className={`w-1/2 px-2 mb-6 relative ${hasFire ? undefined : 'opacity-75'}`} onClick={handleClick}>
       <div
         className="rounded-lg overflow-hidden shadow-md bg-white border-2 border-gray-400"
         style={hasFire ? { borderColor: currentTribe.colors.light } : undefined}
@@ -25,37 +34,24 @@ function PlayerCardSmall(props) {
         {/* Photo */}
         <img
           className="object-cover object-top h-40 w-full"
-          src={`images/cast/${firstName}-${lastName}.jpg`}
+          src={`/images/cast/${firstName}-${lastName}.jpg`}
           alt={`${firstName} ${lastName}`}
           style={!hasFire ? outPlayerPhotoStyle : undefined}
         />
 
-        {/* Status Indicator */}
-        <div className={`absolute top-0 right-0 w-${hasFire ? '8' : '16'} h-8 flex justify-center items-center content-center -mt-3 -mr-1 rounded-full bg-${hasFire ? 'orange-200' : 'white'} shadow`} >
-          {hasFire && (
-            <span className="text-lg font-bold text-center tracking-tighter">
-              {'🔥'}
-            </span>
-          )}
-          {!hasFire && (
-            <span className="text-md font-medium text-gray-900 text-center tracking-tighter">
-              {points} pts
-            </span>
-          )}
-        </div>
+        <PlayerFireStatus
+          className={'absolute top-0 right-0'}
+          hasFire={hasFire}
+          points={points}
+        />
 
         {/* Player Details */}
         <div className={`p-2 pb-3 ${hasFire ? 'bg-white' : 'bg-gray-100'}`}>
           <div className="flex justify-between content-center items-center">
-            <p className="text-lg font-bold">{firstName} {'🗿'.repeat(hiddenIdols)}</p>
-            <p className="text-lg font-bold leading-none">
-              <span className="rounded text-xs px-2 font-medium" style={{
-                'background': currentTribe.colors.light,
-                'color': currentTribe.colors.dark
-              }}>
-                {currentTribe.name}
-              </span>
+            <p className={`text-lg font-semibold`}>
+              {firstName} {'🗿'.repeat(hiddenIdols)}
             </p>
+            <TribeNameSmall tribe={currentTribe} />
           </div>
           <p className="text-xs font-medium text-gray-700 mt-2 hidden">
             <span className="font-bold">Age</span> <span>{age}</span><br />

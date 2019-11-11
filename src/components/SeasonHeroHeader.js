@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function SeasonHeroHeader({ season }) {
   return (
     <section>
-      <div>
-        <img src="images/masthead-2.jpg" />
-      </div>
+      <Link to="/">
+        <img src="/images/masthead-2.jpg" />
+      </Link>
 
       {/* Season info */}
       <div className="mb-2 px-8 pt-4 pb-6" style={{ backgroundColor: 'rgb(21, 20, 28)' }}>
@@ -22,13 +23,13 @@ function SeasonHeroHeader({ season }) {
 }
 function SeasonHeroHeader3({ season }) {
   return (
-    <section>
-      <div>
-        <img src="images/masthead-3.jpg" />
-      </div>
+    <section className="border-b-2 border-blue-400">
+      <Link to="/">
+        <img src="/images/masthead-3.jpg" />
+      </Link>
 
       {/* Season info */}
-      <div className="mb-2 px-8 pt-4 pb-6" style={{ backgroundColor: 'rgb(21, 20, 28)' }}>
+      <div className="mb-2 px-8 pt-4 pb-6 hidden" style={{ backgroundColor: 'rgb(21, 20, 28)' }}>
         <p className="text-sm text-center leading-tight font-bold text-blue-200">
           {`Season ${season.number}`}&ensp;&bull;&ensp;{`${season.displayDate}`}
           <br />

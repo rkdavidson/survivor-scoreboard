@@ -5,21 +5,21 @@ import {
   Route,
 } from "react-router-dom";
 
-import './global.css';
-import './index.css';
-
-import seasonData from './season-39.json';
-
+// Views
 import ScoresDashboard from './views/ScoresDashboard';
+import PlayerBio from './views/PlayerBio';
+
+// Components
 import SeasonHeroHeader from './components/SeasonHeroHeader';
 import SeasonHeader from './components/SeasonHeader';
 
-const {
-  season,
-  tribes,
-  cast,
-  ourGame,
-} = seasonData;
+// Local
+import './global.css';
+import './index.css';
+
+// Season Data
+import SeasonData from './SeasonData';
+const { season, cast, tribes, ourGame } = SeasonData;
 
 function App() {
   return (
@@ -30,11 +30,8 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
       <Switch>
-        <Route path="/about">
-          <h2>About</h2>
-        </Route>
-        <Route path="/users">
-          <h2>Users</h2>
+        <Route path="/player/:playerId">
+          <PlayerBio cast={cast} />
         </Route>
         <Route path="/">
           <ScoresDashboard

@@ -4,7 +4,7 @@ function SeasonHeader({ season }) {
   return (
     <section className="flex justify-start p-4 py-6 mb-6 bg-blue-800 shadow-lg">
       <div>
-        <img src="images/season-logo.png" className="w-20" />
+        <img src="/images/season-logo.png" className="w-20" />
       </div>
 
       {/* Season info */}
