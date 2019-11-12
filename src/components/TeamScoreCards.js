@@ -1,5 +1,6 @@
 import React from 'react';
 import PlayerCardSmall from '../components/PlayerCardSmall';
+import { ReactComponent as Trophy } from '../components/zondicons/trophy.svg';
 
 const rankingStrings = ['', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th'];
 
@@ -10,10 +11,10 @@ export default function TeamScoreCards(props) {
     <section className="pb-2 mb-12 shadow-lg bg-gray-100">
       {/* Team Title */}
       <div className="flex justify-between items-center mb-6 px-8 py-4 bg-white shadow">
-        <h2 className="text-3xl font-black leading-tight text-blue-900">
+        <h2 className="text-3xl font-black leading-tight text-teal-900">
           {standing === 1 ? (
-            <span role="img" aria-label="1st place" className="block text-base font-bold text-blue-600">
-              👑 1st
+            <span className="flex text-base font-bold text-teal-600 align-center items-center">
+              <Trophy className="inline-block w-4 h-4 fill-current text-orange-400 mr-1" /> 1st
             </span>
           ) : (
               <span role="img" aria-label={rankingStrings[standing]} className="block text-base font-bold text-blue-600">

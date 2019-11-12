@@ -1,8 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import PlayerFireStatus from '../components/PlayerFireStatus';
 import { TribeName } from '../components/TribeName';
+import { ReactComponent as CheveronLeft } from '../components/zondicons/cheveron-left.svg';
 
 function PlayerProfile({ player }) {
   const {
@@ -24,7 +25,7 @@ function PlayerProfile({ player }) {
   };
 
   return (
-    <div className="px-6">
+    <div>
       <h1 className="mb-4 text-2xl text-center font-black text-gray-800">
         {`${player.profile.firstName} ${player.profile.lastName}`}
       </h1>
@@ -51,12 +52,12 @@ function PlayerProfile({ player }) {
       <div className="mt-2 break-words text-md text-gray-800">
         {Object.entries(quickStats).map(([label, value]) => (
           <div key={label} className="flex justify-between content-center items-start mb-2 leading-tight">
-            <span className="w-1/3 text-sm text-right pr-4 font-bold">{label}</span>
+            <span className="w-1/3 text-right pr-4 font-bold">{label}</span>
             <span className="w-2/3">{value}</span>
           </div>
         ))}
       </div>
-    </div >
+    </div>
   );
 }
 
@@ -65,7 +66,10 @@ function PlayerBio({ cast }) {
   const player = cast.find(p => p.id === playerId);
 
   return (
-    <section className="mt-8 pb-12">
+    <section className="mt-4 px-4 pb-12">
+      <Link to="/" className="text-teal-600 inline-flex align-center content-center">
+        <CheveronLeft className="w-6 h-6 inline-block fill-current" /> Back
+      </Link>
       <PlayerProfile player={player} />
     </section>
   );
