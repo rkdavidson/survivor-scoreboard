@@ -1,15 +1,15 @@
 import React from 'react';
 
-export function TribeNameSmall({ tribe }) {
+export function TribeNameSmall({ tribe, showName = true }) {
   const { name, colors } = tribe;
 
   return (
     <p className="text-lg font-bold leading-none">
       <span className="rounded text-xs px-2 font-bold tracking-wide" style={{
         background: colors.light,
-        color: colors.dark
+        color: colors.dark,
       }}>
-        {name.toUpperCase()}
+        {showName && name.toUpperCase()}
       </span>
     </p>
   );

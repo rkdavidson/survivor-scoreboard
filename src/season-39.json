@@ -35,7 +35,7 @@
           "jack",
           "dean"
         ],
-        "totalPoints": 7
+        "totalPoints": 16
       },
       {
         "id": "carolyn",
@@ -57,7 +57,7 @@
           "karishma",
           "kellee"
         ],
-        "totalPoints": 7
+        "totalPoints": 15
       },
       {
         "id": "gina",
@@ -201,7 +201,8 @@
       "currentTribe": "lairo",
       "hasFire": false,
       "hiddenIdols": 0,
-      "points": 7
+      "points": 7,
+      "onJury": true
     },
     {
       "id": "jamal",
@@ -216,9 +217,10 @@
         "selfBio": "I've been intensely studying this game. I feel like I have a good handle on what to do in order to give myself the best shot at making it to the end with enough goodwill to get votes. People will be happy to write my name at the end."
       },
       "currentTribe": "lairo",
-      "hasFire": true,
+      "hasFire": false,
       "hiddenIdols": 0,
-      "points": 0
+      "points": 9,
+      "onJury": true
     },
     {
       "id": "janet",
@@ -284,9 +286,10 @@
         "selfBio": "My pain tolerance is high, and I love to make difficult things fun. With a pinch of luck and a good \"meat shield,\" I'll win."
       },
       "currentTribe": "lairo",
-      "hasFire": true,
-      "hiddenIdols": 0,
-      "points": 0
+      "hasFire": false,
+      "hiddenIdols": 2,
+      "points": 8,
+      "onJury": true
     },
     {
       "id": "lauren",
