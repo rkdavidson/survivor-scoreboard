@@ -10,8 +10,8 @@ export default function TeamScoreCards(props) {
   return (
     <section className="pb-2 mb-12 shadow-lg bg-gray-100">
       {/* Team Title */}
-      <div className="flex justify-between items-center mb-6 px-8 py-4 bg-white shadow">
-        <h2 className="text-3xl font-black leading-tight text-teal-900">
+      <div className="flex justify-between items-center mb-6 py-6 pl-8 pr-4 bg-white shadow">
+        <h2 className="text-3xl font-black leading-none text-teal-900">
           {standing === 1 ? (
             <span className="flex text-base font-bold text-teal-600 align-center items-center">
               <Trophy className="inline-block w-4 h-4 fill-current text-orange-400 mr-1" /> 1st
@@ -23,7 +23,7 @@ export default function TeamScoreCards(props) {
             )}
           {owner}
         </h2>
-        <span className="inline-block rounded-full px-4 py-1 mr-2 bg-yellow-200 text-xl font-semibold text-orange-600 shadow">
+        <span className="inline-block rounded-full px-4 py-1 mr-2 text-xl text-orange-900 bg-yellow-300 tracking-tight">
           {totalPoints} pts
           </span>
       </div>
