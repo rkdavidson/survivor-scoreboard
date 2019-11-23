@@ -1,0 +1,61 @@
+{
+  "name": "Home Game",
+  "icon": "Home",
+  "teams": [
+    {
+      "id": "ryan",
+      "owner": "Ryan",
+      "members": [
+        "lauren",
+        "jamal",
+        "jack",
+        "dean"
+      ],
+      "totalPoints": 16
+    },
+    {
+      "id": "carolyn",
+      "owner": "Carolyn",
+      "members": [
+        "aaron",
+        "missy",
+        "tommy",
+        "jason"
+      ],
+      "totalPoints": 6
+    },
+    {
+      "id": "keith",
+      "owner": "Keith",
+      "members": [
+        "molly",
+        "tom",
+        "karishma",
+        "kellee"
+      ],
+      "totalPoints": 15
+    },
+    {
+      "id": "gina",
+      "owner": "Gina",
+      "members": [
+        "janet",
+        "elaine",
+        "noura",
+        "elizabeth"
+      ],
+      "totalPoints": 0
+    },
+    {
+      "id": "bench",
+      "owner": "💺 Bench",
+      "members": [
+        "ronnie",
+        "dan",
+        "vince",
+        "chelsea"
+      ],
+      "totalPoints": 8
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "details": {
+    "number": 39,
+    "name": "Island of the Idols",
+    "displayDate": "Fall, 2019"
+  },
+  "tribes": [
+    {
+      "id": "vokai",
+      "active": true,
+      "name": "Vokai",
+      "colors": {
+        "light": "rgb(215, 181, 228)",
+        "dark": "rgb(120, 51, 130)"
+      }
+    },
+    {
+      "id": "lairo",
+      "active": true,
+      "name": "Lairo",
+      "colors": {
+        "light": "rgb(255, 216, 183)",
+        "dark": "rgb(190, 60, 35)"
+      }
+    }
+  ]
+}

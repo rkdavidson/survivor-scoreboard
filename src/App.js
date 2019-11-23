@@ -18,13 +18,16 @@ import './global.css';
 import './index.css';
 
 // Season Data
-import SeasonData from './SeasonData';
-const { season, cast, tribes, ourGame } = SeasonData;
+import getSeasonData from './data/getSeasonData';
+const season39 = getSeasonData('s39');
+console.log('season39: ', season39);
+// import SeasonData from './data/SeasonData';
+const { details, cast, tribes, games } = season39;
 
 function App() {
   return (
     <Router basename="survivor-scoreboard">
-      <SeasonHeroHeader season={season} />
+      <SeasonHeroHeader season={season39} />
       {/* <SeasonHeader season={season} /> */}
 
       {/* A <Switch> looks through its children <Route>s and
@@ -35,10 +38,10 @@ function App() {
         </Route>
         <Route path={['/', '/scores']}>
           <ScoresDashboard
-            season={season}
+            season={season39}
             tribes={tribes}
             cast={cast}
-            ourGame={ourGame}
+            ourGame={games[0]}
           />
         </Route>
       </Switch>

@@ -1,0 +1,61 @@
+{
+  "name": "Work (ITI) Game",
+  "icon": "ComputerLaptop",
+  "teams": [
+    {
+      "id": "deborah",
+      "owner": "Deborah",
+      "members": [
+        "tommy",
+        "aaron",
+        "missy",
+        "vince"
+      ],
+      "totalPoints": 3
+    },
+    {
+      "id": "jeff",
+      "owner": "Jeff",
+      "members": [
+        "jamal",
+        "dean",
+        "noura",
+        "jason"
+      ],
+      "totalPoints": 15
+    },
+    {
+      "id": "keith",
+      "owner": "Keith",
+      "members": [
+        "jack",
+        "chelsea",
+        "tom",
+        "karishma"
+      ],
+      "totalPoints": 16
+    },
+    {
+      "id": "gina",
+      "owner": "Gina",
+      "members": [
+        "molly",
+        "elizabeth",
+        "elaine",
+        "janet"
+      ],
+      "totalPoints": 2
+    },
+    {
+      "id": "bench",
+      "owner": "💺 Bench",
+      "members": [
+        "dan",
+        "lauren",
+        "kellee",
+        "ronnie"
+      ],
+      "totalPoints": 9
+    }
+  ]
+}
