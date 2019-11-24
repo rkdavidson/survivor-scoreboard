@@ -10,7 +10,7 @@ const outPlayerPhotoStyle = {
   userSelect: 'none'
 };
 
-function PlayerCardSmall(props) {
+function PlayerCard(props) {
   const {
     id,
     profile: { firstName, lastName, age, occupation, currentResidence, hometown },
@@ -80,4 +80,4 @@ function PlayerCardSmall(props) {
   );
 }
 
-export default PlayerCardSmall;
+export default PlayerCard;

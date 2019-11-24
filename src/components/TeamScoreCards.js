@@ -1,14 +1,16 @@
 import React from 'react';
-import PlayerCardSmall from '../components/PlayerCardSmall';
+import PlayerCard from '../components/PlayerCard';
+import PlayerCardTall from '../components/PlayerCardTall';
 import { ReactComponent as Trophy } from '../components/zondicons/trophy.svg';
 
 const rankingStrings = ['', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th'];
 
 export default function TeamScoreCards(props) {
-  const { owner, members, totalPoints, standing } = props;
+  const { owner, members, totalPoints, standing, layout } = props;
+  const CardComponent = layout === 'tile' ? PlayerCard : PlayerCardTall;
 
   return (
-    <section className="pb-2 mb-12 shadow-lg bg-gray-100">
+    <section className="pb-2 mb-8 shadow-lg bg-gray-100">
       {/* Team Title */}
       <div className="flex justify-between items-center mb-6 py-6 pl-8 pr-4 bg-white shadow">
         <h2 className="text-3xl font-black leading-none text-teal-900">
@@ -31,10 +33,10 @@ export default function TeamScoreCards(props) {
       {/* Team Players */}
       <section className="px-4">
         <div className="flex flex-wrap -mx-2">
-          <PlayerCardSmall player={members[0]} />
-          <PlayerCardSmall player={members[1]} />
-          <PlayerCardSmall player={members[2]} />
-          <PlayerCardSmall player={members[3]} />
+          <CardComponent player={members[0]} />
+          <CardComponent player={members[1]} />
+          <CardComponent player={members[2]} />
+          <CardComponent player={members[3]} />
         </div>
       </section>
     </section>
