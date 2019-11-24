@@ -9,7 +9,7 @@ function PlayerProfile({ player }) {
   const {
     id,
     profile: { firstName, lastName, age, occupation, currentResidence, hometown },
-    currentTribe,
+    tribe,
     hasFire,
     // hiddenIdols,
     points,
@@ -36,7 +36,7 @@ function PlayerProfile({ player }) {
           src={`${process.env.PUBLIC_URL}/images/cast/${firstName}-${lastName}.jpg`}
           alt={`${firstName} ${lastName}`}
           style={{
-            borderColor: currentTribe.colors.light
+            borderColor: tribe.colors.light
           }}
         />
 
@@ -46,7 +46,7 @@ function PlayerProfile({ player }) {
           points={points}
         />
 
-        <TribeName className="absolute mt-3" tribe={currentTribe} />
+        <TribeName className="absolute mt-3" tribe={tribe} />
       </div>
 
       <div className="mt-2 break-words text-md text-gray-800">

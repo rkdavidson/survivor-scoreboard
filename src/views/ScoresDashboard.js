@@ -5,11 +5,11 @@ import TeamScoreCards from '../components/TeamScoreCards';
 // -----------------------------------------------------------------
 
 function ScoresDashboard(props) {
-  const { season, cast, tribes, ourGame } = props;
+  const { season, cast, tribes, game } = props;
 
   return (
     <section className="container mx-auto pb-4">
-      {ourGame.teams.map((team, index) => {
+      {game.teams.map((team, index) => {
         return (
           <TeamScoreCards
             key={team.id}
