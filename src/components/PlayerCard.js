@@ -33,7 +33,7 @@ function PlayerCard(props) {
       <div className={`rounded-lg overflow-hidden shadow-md bg-white border-2 ${borderColor}`}>
         {/* Photo */}
         <img
-          className="object-cover object-top h-40 w-full"
+          className="object-cover object-top h-56 md:h-auto w-full"
           src={`${process.env.PUBLIC_URL}/images/cast/${firstName}-${lastName}.jpg`}
           alt={`${firstName} ${lastName}`}
           style={!hasFire ? outPlayerPhotoStyle : undefined}

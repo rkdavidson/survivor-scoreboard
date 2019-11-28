@@ -13,7 +13,7 @@ function SeasonHeroHeader({ seasonDetails, games, currentGameId, onChangeGame })
 
   return (
     <section className="">
-      <Link to="/">
+      <Link to="/" className="lg:hidden">
         <img src={`${process.env.PUBLIC_URL}/images/masthead-3.jpg`} alt="S39" />
       </Link>
 
@@ -26,7 +26,7 @@ function SeasonHeroHeader({ seasonDetails, games, currentGameId, onChangeGame })
             {name}
           </span>
         </p>
-        <div className="flex justify-between px-8">
+        <div className="flex justify-between px-8 md:w-3/4 lg:w-1/2 xl:w-1/4 m-auto">
           {games.map(game => {
             const isActive = game.id === currentGameId;
             const Icon = iconMap[game.icon];

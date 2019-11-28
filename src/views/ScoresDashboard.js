@@ -17,7 +17,7 @@ function ScoresDashboard(props) {
   const IconComponent = layout === 'tile' ? ColumnIcon : TileIcon;
 
   return (
-    <section className="container mx-auto pb-4">
+    <section className="container mx-auto pb-4 max-w-2xl">
       <div className="px-6 py-4 flex justify-end items-center">
         <button className="text-center leading-relaxed" onClick={handleChangeLayout}>
           <span className="mr-3">View as</span>

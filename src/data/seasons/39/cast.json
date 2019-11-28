@@ -97,9 +97,9 @@
       "selfBio": "I'm physically, mentally, and socially strong. I can easily connect with people—my alliances will be strong and help carry me through the game. I can win individual Immunity due to my strength as an athlete. I'm a tough girl who will fight until the end."
     },
     "tribe": "vokai",
-    "hasFire": true,
+    "hasFire": false,
     "hiddenIdols": 0,
-    "points": 0
+    "points": 12
   },
   {
     "id": "jack",
@@ -185,7 +185,7 @@
     },
     "tribe": "lairo",
     "hasFire": true,
-    "hiddenIdols": 1,
+    "hiddenIdols": 0,
     "points": 0
   },
   {
