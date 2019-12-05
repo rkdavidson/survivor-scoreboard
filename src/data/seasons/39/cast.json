@@ -186,9 +186,10 @@
       "selfBio": "I feel like I was born to play this game. I've always craved challenges that help me learn more about myself, and I know deep down that I do have the physical, mental, and social skills to outlast, outwit, and outplay anyone. My job and my life experiences have trained me exactly how to win. I am hungry to be out in the wild, pushing myself to the edge, and doing things I never dreamed I could do. In the end, surviving this game means something more valuable than money to me."
     },
     "tribe": "lairo",
-    "hasFire": true,
+    "hasFire": false,
     "hiddenIdols": 0,
-    "points": 0
+    "points": 13,
+    "onJury": true
   },
   {
     "id": "kellee",
