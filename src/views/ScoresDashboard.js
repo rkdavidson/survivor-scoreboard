@@ -18,7 +18,8 @@ function ScoresDashboard(props) {
 
   return (
     <section className="container mx-auto pb-4 max-w-2xl">
-      <div className="px-6 py-4 flex justify-end items-center">
+      <div className="px-4 py-4 flex justify-between items-center">
+        <p className="text-sm">Last updated {season.details.lastUpdated}</p>
         <button className="text-center leading-relaxed" onClick={handleChangeLayout}>
           <span className="mr-3">View as</span>
           <IconComponent className="inline-block w-6 h-6 fill-current" />

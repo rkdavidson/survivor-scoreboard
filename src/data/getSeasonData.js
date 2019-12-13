@@ -34,7 +34,8 @@ function sortActivePlayersFirst(a, b) {
 
 export default function getSeasonData(seasonId) {
   const seasonJson = get(seasons, seasonId, false);
-  console.log('seasons:', seasons);
+  console.log('[ getSeasonData ] seasons:', seasons);
+
   if (!seasonJson) {
     throw new Error('Season not found');
   }

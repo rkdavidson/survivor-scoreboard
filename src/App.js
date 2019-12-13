@@ -20,8 +20,8 @@ import './index.css';
 // Season Data
 import getSeasonData from './data/getSeasonData';
 const season39 = getSeasonData('s39');
-
 console.log('season39: ', season39);
+
 const { details, cast, tribes, games } = season39;
 
 const developmentMode = window.location.hostname === 'localhost';
