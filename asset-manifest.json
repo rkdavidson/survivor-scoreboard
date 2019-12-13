@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://rkdavidson.github.io/survivor-scoreboard/static/css/main.a235d890.chunk.css",
-    "main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.74456986.chunk.js",
-    "main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.74456986.chunk.js.map",
+    "main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.3c2194ab.chunk.js",
+    "main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.3c2194ab.chunk.js.map",
     "runtime-main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/runtime-main.e5e9351c.js",
     "runtime-main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/runtime-main.e5e9351c.js.map",
     "static/js/2.fa065468.chunk.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.fa065468.chunk.js",
     "static/js/2.fa065468.chunk.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.fa065468.chunk.js.map",
     "index.html": "https://rkdavidson.github.io/survivor-scoreboard/index.html",
-    "precache-manifest.0c1c81385538943fb07b03eec4877425.js": "https://rkdavidson.github.io/survivor-scoreboard/precache-manifest.0c1c81385538943fb07b03eec4877425.js",
+    "precache-manifest.cedb5499d5b6a6f2326c2c12aeb4bde3.js": "https://rkdavidson.github.io/survivor-scoreboard/precache-manifest.cedb5499d5b6a6f2326c2c12aeb4bde3.js",
     "service-worker.js": "https://rkdavidson.github.io/survivor-scoreboard/service-worker.js",
     "static/css/main.a235d890.chunk.css.map": "https://rkdavidson.github.io/survivor-scoreboard/static/css/main.a235d890.chunk.css.map",
     "static/media/cheveron-left.1a783473.svg": "https://rkdavidson.github.io/survivor-scoreboard/static/media/cheveron-left.1a783473.svg",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.e5e9351c.js",
     "static/js/2.fa065468.chunk.js",
     "static/css/main.a235d890.chunk.css",
-    "static/js/main.74456986.chunk.js"
+    "static/js/main.3c2194ab.chunk.js"
   ]
 }
