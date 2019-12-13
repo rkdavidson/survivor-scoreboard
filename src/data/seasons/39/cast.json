@@ -47,9 +47,9 @@
       "selfBio": "I think I have the basic, if not superior, physicality to be useful to the Tribe. More importantly, I have an incredible ability to know what people need and to make them feel good, and to make myself critical in their success."
     },
     "tribe": "vokai",
-    "hasFire": true,
+    "hasFire": false,
     "hiddenIdols": 0,
-    "points": 0
+    "points": 15
   },
   {
     "id": "dean",
@@ -81,9 +81,10 @@
       "selfBio": "I think people will underestimate me. I think with my people skills and my ability to relate to different types of people, I will be able to befriend them or gain their trust. I would be overlooked because I wouldn't be a threat, but an ally."
     },
     "tribe": "vokai",
-    "hasFire": true,
+    "hasFire": false,
+    "onJury": true,
     "hiddenIdols": 0,
-    "points": 0
+    "points": 14
   },
   {
     "id": "elizabeth",
@@ -153,7 +154,7 @@
     },
     "tribe": "lairo",
     "hasFire": true,
-    "hiddenIdols": 0,
+    "hiddenIdols": 1,
     "points": 0
   },
   {
