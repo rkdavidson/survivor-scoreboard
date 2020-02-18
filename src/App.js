@@ -19,15 +19,15 @@ import './index.css';
 
 // Season Data
 import getSeasonData from './data/getSeasonData';
-const season39 = getSeasonData('s39');
-console.log('season39: ', season39);
+const season40 = getSeasonData('s40');
+console.log('season40: ', season40);
 
-const { details, cast, tribes, games } = season39;
+const { details, cast, tribes, games } = season40;
 
 const developmentMode = window.location.hostname === 'localhost';
 
 function App() {
-  const [gameId, setGameId] = useState(season39.games[0].id);
+  const [gameId, setGameId] = useState(season40.games[0].id);
 
   const game = games.find(({ id }) => id === gameId);
 
@@ -49,7 +49,7 @@ function App() {
         </Route>
         <Route path="/">
           <ScoresDashboard
-            season={season39}
+            season={season40}
             tribes={tribes}
             cast={cast}
             game={game}

@@ -13,7 +13,13 @@ const outPlayerPhotoStyle = {
 function PlayerCard(props) {
   const {
     id,
-    profile: { firstName, lastName, age, occupation, currentResidence, hometown },
+    firstName,
+    lastName,
+    bio: {
+      occupation,
+      currentResidence,
+      hometown,
+    },
     tribe,
     hasFire,
     hiddenIdols,
@@ -34,7 +40,7 @@ function PlayerCard(props) {
         {/* Photo */}
         <img
           className="object-cover object-top h-56 md:h-auto w-full"
-          src={`${process.env.PUBLIC_URL}/images/cast/${firstName}-${lastName}.jpg`}
+          src={`${process.env.PUBLIC_URL}/images/40/cast/${id}.jpg`}
           alt={`${firstName} ${lastName}`}
           style={!hasFire ? outPlayerPhotoStyle : undefined}
         />
@@ -70,7 +76,6 @@ function PlayerCard(props) {
             </div>
           </div>
           <p className="text-xs font-medium text-gray-700 mt-2 hidden">
-            <span className="font-bold">Age</span> <span>{age}</span><br />
             <span>{occupation}</span><br />
             <span>{currentResidence}</span><br />
           </p>

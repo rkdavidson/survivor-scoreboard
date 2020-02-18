@@ -1,4 +1,4 @@
-import { get } from 'lodash';
+import { get} from 'lodash';
 import seasons from './seasons';
 
 
@@ -32,7 +32,9 @@ function sortActivePlayersFirst(a, b) {
 // Main
 // -----------------------------------------------------------------
 
-export default function getSeasonData(seasonId) {
+/*
+// ⚠️ SEASON 39 - DEPRECATED METHOD ⚠️
+export default function getSeasonData_SEASON39(seasonId) {
   const seasonJson = get(seasons, seasonId, false);
   console.log('[ getSeasonData ] seasons:', seasons);
 
@@ -47,6 +49,70 @@ export default function getSeasonData(seasonId) {
 
   // Cast & Tribes
   const resolvedCast = cast.map(createResolver(tribes, 'tribe'));
+  const resolvedTribes = tribes.map((tribe) => ({
+    ...tribe,
+    members: resolvedCast.filter((player) => player.tribe.id === tribe.id)
+  }));
+
+  // Teams
+  const resolveTeam = (team) => ({
+    ...team,
+    members: team.members.map(createResolver(resolvedCast)).sort(sortActivePlayersFirst)
+  });
+  const resolveTeams = (teams) => {
+    // Resolve team properties, sort all teams, put the bench at the end
+    const resolvedTeams = teams.map(resolveTeam).sort((a, b) => b.totalPoints - a.totalPoints);
+    const benchTeam = resolvedTeams.find(({ id }) => id === "bench");
+    const rankedTeams = resolvedTeams.filter(({ id }) => id !== "bench").concat([benchTeam]);
+
+    return rankedTeams;
+  };
+
+  // Games
+  const resolvedGames = games.map(game => ({
+    ...game,
+    teams: resolveTeams(game.teams),
+  }));
+
+  // :: Return final resolved data
+  return {
+    details,
+    tribes: resolvedTribes,
+    cast: resolvedCast,
+    games: resolvedGames,
+  }
+}
+*/
+
+export default function getSeasonData(seasonId) {
+  const seasonJson = get(seasons, seasonId, false);
+  console.log('[ getSeasonData ] seasons:', seasons);
+
+  if (!seasonJson) {
+    throw new Error('Season not found');
+  }
+
+  // :: Get important data from the JSON file
+  const { season: { details, tribes }, cast, weeks, games } = seasonJson;
+
+  // :: Resolve relational references between the data, from bottom up
+
+  // Cast & Tribes
+  const castAfterWeeklyUpdates = weeks.reduce((previous, current) => {
+    console.log({ previous, current });
+    if (previous === null) {
+      return current;
+    }
+
+    return previous.map(player => ({
+      ...(cast.find(playerDetails => playerDetails.id === player.id) || {}),
+      ...player,
+      ...(current.find(updatedPlayer => updatedPlayer.id === player.id) || {}),
+    }));
+  });
+  console.log('castAfterWeeklyUpdates: ', castAfterWeeklyUpdates);
+
+  const resolvedCast = castAfterWeeklyUpdates.map(createResolver(tribes, 'tribe'));
   const resolvedTribes = tribes.map((tribe) => ({
     ...tribe,
     members: resolvedCast.filter((player) => player.tribe.id === tribe.id)

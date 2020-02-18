@@ -13,7 +13,7 @@ const outPlayerPhotoStyle = {
 function PlayerCardTall(props) {
   const {
     id,
-    profile: { firstName, lastName, age, occupation, currentResidence, hometown },
+    firstName, lastName, occupation, currentResidence, hometown,
     tribe,
     hasFire,
     hiddenIdols,
@@ -34,7 +34,7 @@ function PlayerCardTall(props) {
         {/* Photo */}
         <img
           className="object-cover object-top h-32 md:h-40 w-full"
-          src={`${process.env.PUBLIC_URL}/images/cast/${firstName}-${lastName}.jpg`}
+          src={`${process.env.PUBLIC_URL}/images/40/cast/${id}.jpg`}
           alt={`${firstName} ${lastName}`}
           style={!hasFire ? outPlayerPhotoStyle : undefined}
         />

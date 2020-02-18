@@ -1,0 +1,28 @@
+{
+  "details": {
+    "number": 40,
+    "name": "Winners at War",
+    "displayDate": "Spring, 2020",
+    "lastUpdated": "Feb. 17"
+  },
+  "tribes": [
+    {
+      "id": "dakal",
+      "active": true,
+      "name": "Dakal",
+      "colors": {
+        "light": "rgb(234, 72, 48)",
+        "dark": "rgb(245, 24, 48)"
+      }
+    },
+    {
+      "id": "sele",
+      "active": true,
+      "name": "Sele",
+      "colors": {
+        "light": "rgb(32, 48, 234)",
+        "dark": "rgb(0, 0, 255)"
+      }
+    }
+  ]
+}
