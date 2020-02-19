@@ -86,33 +86,23 @@ export default function getSeasonData_SEASON39(seasonId) {
 
 export default function getSeasonData(seasonId) {
   const seasonJson = get(seasons, seasonId, false);
-  console.log('[ getSeasonData ] seasons:', seasons);
 
   if (!seasonJson) {
     throw new Error('Season not found');
   }
 
   // :: Get important data from the JSON file
-  const { season: { details, tribes }, cast, weeks, games } = seasonJson;
+  const { season: { details, tribes }, cast, episode, games } = seasonJson;
 
   // :: Resolve relational references between the data, from bottom up
 
   // Cast & Tribes
-  const castAfterWeeklyUpdates = weeks.reduce((previous, current) => {
-    console.log({ previous, current });
-    if (previous === null) {
-      return current;
-    }
+  const castWithEpisodeData = cast.map(member => ({
+    ...member,
+    ...episode.find(episodeMember => episodeMember.id === member.id) || {}
+  }));
 
-    return previous.map(player => ({
-      ...(cast.find(playerDetails => playerDetails.id === player.id) || {}),
-      ...player,
-      ...(current.find(updatedPlayer => updatedPlayer.id === player.id) || {}),
-    }));
-  });
-  console.log('castAfterWeeklyUpdates: ', castAfterWeeklyUpdates);
-
-  const resolvedCast = castAfterWeeklyUpdates.map(createResolver(tribes, 'tribe'));
+  const resolvedCast = castWithEpisodeData.map(createResolver(tribes, 'tribe'));
   const resolvedTribes = tribes.map((tribe) => ({
     ...tribe,
     members: resolvedCast.filter((player) => player.tribe.id === tribe.id)
