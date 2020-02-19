@@ -6,8 +6,8 @@ export function TribeNameSmall({ tribe, showName = true }) {
   return (
     <p className="text-lg font-bold leading-none">
       <span className="rounded text-xs px-2 font-bold tracking-wide" style={{
-        background: colors.light,
-        color: colors.dark,
+        background: colors.dark,
+        color: colors.light,
       }}>
         {showName && name.toUpperCase()}
       </span>
@@ -20,8 +20,8 @@ export function TribeName({ className, tribe }) {
 
   return (
     <span className={`rounded px-4 py-1 mt-3 text-md font-bold tracking-widest shadow ${className}`} style={{
-      background: colors.light,
-      color: colors.dark,
+      background: colors.dark,
+      color: colors.light,
     }}>
       {name.toUpperCase()}
     </span>

@@ -11,8 +11,8 @@
       "active": true,
       "name": "Dakal",
       "colors": {
-        "light": "rgb(234, 72, 48)",
-        "dark": "rgb(245, 24, 48)"
+        "light": "rgb(255, 200, 190)",
+        "dark": "rgb(220, 32, 16)"
       }
     },
     {
@@ -20,7 +20,7 @@
       "active": true,
       "name": "Sele",
       "colors": {
-        "light": "rgb(32, 48, 234)",
+        "light": "rgb(190, 200, 255)",
         "dark": "rgb(0, 0, 255)"
       }
     }
