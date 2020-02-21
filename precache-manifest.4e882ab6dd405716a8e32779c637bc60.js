@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3dc25e50fc501ed582f70da863a41b3",
+    "revision": "e30f9d7d8df428f8a2b5fe9c1a78a4bf",
     "url": "https://rkdavidson.github.io/survivor-scoreboard/index.html"
   },
   {
-    "revision": "bbf2e03b450bc76e234b",
+    "revision": "aa2e7d8096514c546c17",
     "url": "https://rkdavidson.github.io/survivor-scoreboard/static/css/main.a235d890.chunk.css"
   },
   {
-    "revision": "5f658e751695cc8af2c1",
-    "url": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.fa065468.chunk.js"
+    "revision": "5c6d00220c6b7429aee2",
+    "url": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.cc472672.chunk.js"
   },
   {
-    "revision": "bbf2e03b450bc76e234b",
-    "url": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.362f5d26.chunk.js"
+    "revision": "aa2e7d8096514c546c17",
+    "url": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.e192d230.chunk.js"
   },
   {
     "revision": "02dac7ccf3371279d0e7",
     "url": "https://rkdavidson.github.io/survivor-scoreboard/static/js/runtime-main.e5e9351c.js"
+  },
+  {
+    "revision": "733f64952ae861349e8a0bc456be0485",
+    "url": "https://rkdavidson.github.io/survivor-scoreboard/static/media/calendar.733f6495.svg"
   },
   {
     "revision": "1a783473e28e2ac239ba5d53ca953fd1",
