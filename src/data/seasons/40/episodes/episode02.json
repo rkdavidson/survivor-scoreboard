@@ -12,14 +12,14 @@
   },
   {
     "id": "amber",
-    "hasFire": true,
+    "hasFire": false,
     "tribe": "sele",
-    "onEdgeOfExtinction": false,
-    "fireTokens": 1,
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
-    "points": 0
+    "points": 2
   },
   {
     "id": "ben",
@@ -34,22 +34,22 @@
   },
   {
     "id": "danni",
-    "hasFire": true,
+    "hasFire": false,
     "tribe": "dakal",
-    "onEdgeOfExtinction": false,
-    "fireTokens": 1,
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
-    "points": 0
+    "points": 3
   },
   {
     "id": "denise",
     "hasFire": true,
     "tribe": "dakal",
     "onEdgeOfExtinction": false,
-    "fireTokens": 1,
-    "immunityIdols": 0,
+    "fireTokens": 2,
+    "immunityIdols": 1,
     "advantages": [],
     "onJury": false,
     "points": 0
@@ -70,7 +70,7 @@
     "hasFire": true,
     "tribe": "dakal",
     "onEdgeOfExtinction": false,
-    "fireTokens": 1,
+    "fireTokens": 0,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
@@ -100,14 +100,14 @@
   },
   {
     "id": "natalie",
-    "hasFire": true,
+    "hasFire": false,
     "tribe": "dakal",
-    "onEdgeOfExtinction": false,
+    "onEdgeOfExtinction": true,
     "fireTokens": 1,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
-    "points": 0
+    "points": 1
   },
   {
     "id": "nick",
@@ -136,7 +136,7 @@
     "hasFire": true,
     "tribe": "dakal",
     "onEdgeOfExtinction": false,
-    "fireTokens": 1,
+    "fireTokens": 2,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
@@ -147,8 +147,8 @@
     "hasFire": true,
     "tribe": "sele",
     "onEdgeOfExtinction": false,
-    "fireTokens": 1,
-    "immunityIdols": 0,
+    "fireTokens": 0,
+    "immunityIdols": 1,
     "advantages": [],
     "onJury": false,
     "points": 0

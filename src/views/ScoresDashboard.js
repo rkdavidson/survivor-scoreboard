@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { ReactComponent as ColumnIcon } from '../components/zondicons/view-column.svg';
 import { ReactComponent as TileIcon } from '../components/zondicons/view-tile.svg';
 import TeamScoreCards from '../components/TeamScoreCards';
+import { ReactComponent as CalendarIcon } from '../components/zondicons/calendar.svg';
 
 // -----------------------------------------------------------------
 
@@ -19,7 +20,16 @@ function ScoresDashboard(props) {
   return (
     <section className="container mx-auto pb-4 max-w-2xl">
       <div className="px-4 py-4 flex justify-between items-center">
-        <p className="text-sm">Last updated {season.details.lastUpdated}</p>
+        <div className="flex flex-row items-center">
+          <CalendarIcon className="inline-block w-4 h-4 mr-2 fill-current" />
+          <p className="text-xs leading-tight">
+            {`Last updated on `}
+            <span className="font-bold">
+              {season.details.lastUpdated}
+            </span>
+          </p>
+        </div>
+
         <button className="text-center leading-relaxed" onClick={handleChangeLayout}>
           <span className="mr-3">View as</span>
           <IconComponent className="inline-block w-6 h-6 fill-current" />

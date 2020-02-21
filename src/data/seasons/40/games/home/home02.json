@@ -1,38 +1,38 @@
 {
-  "id": "work",
-  "name": "Work (ITI) Game",
-  "icon": "ComputerLaptop",
+  "id": "home",
+  "name": "Home Game",
+  "icon": "Home",
   "teams": [
     {
-      "id": "deborah",
-      "owner": "Deborah",
+      "id": "ryan",
+      "owner": "Ryan",
       "members": [
-        "michele",
-        "wendell",
-        "sandra",
+        "yul",
+        "tony",
+        "denise",
         "rob"
       ],
       "totalPoints": 0
     },
     {
-      "id": "jeff",
-      "owner": "Jeff",
+      "id": "carolyn",
+      "owner": "Carolyn",
       "members": [
-        "ben",
+        "tyson",
         "nick",
-        "sophie",
-        "adam"
+        "parvati",
+        "danni"
       ],
-      "totalPoints": 0
+      "totalPoints": 3
     },
     {
       "id": "keith",
       "owner": "Keith",
       "members": [
-        "yul",
-        "tyson",
-        "tony",
-        "jeremy"
+        "wendell",
+        "ethan",
+        "jeremy",
+        "sophie"
       ],
       "totalPoints": 0
     },
@@ -41,9 +41,9 @@
       "owner": "Gina",
       "members": [
         "sarah",
-        "ethan",
-        "danni",
-        "parvati"
+        "michele",
+        "adam",
+        "kim"
       ],
       "totalPoints": 0
     },
@@ -51,12 +51,12 @@
       "id": "bench",
       "owner": "💺 Bench",
       "members": [
-        "kim",
-        "denise",
         "natalie",
-        "amber"
+        "amber",
+        "sandra",
+        "ben"
       ],
-      "totalPoints": 0
+      "totalPoints": 3
     }
   ]
 }

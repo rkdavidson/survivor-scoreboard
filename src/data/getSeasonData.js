@@ -1,4 +1,4 @@
-import { get} from 'lodash';
+import { get } from 'lodash';
 import seasons from './seasons';
 
 
@@ -32,11 +32,10 @@ function sortActivePlayersFirst(a, b) {
 // Main
 // -----------------------------------------------------------------
 
-/*
 // ⚠️ SEASON 39 - DEPRECATED METHOD ⚠️
-export default function getSeasonData_SEASON39(seasonId) {
+export function getSeason39Data(seasonId) {
   const seasonJson = get(seasons, seasonId, false);
-  console.log('[ getSeasonData ] seasons:', seasons);
+  console.log('[ getSeason39Data ] seasons:', seasons);
 
   if (!seasonJson) {
     throw new Error('Season not found');
@@ -82,9 +81,8 @@ export default function getSeasonData_SEASON39(seasonId) {
     games: resolvedGames,
   }
 }
-*/
 
-export default function getSeasonData(seasonId) {
+export function getSeasonData(seasonId) {
   const seasonJson = get(seasons, seasonId, false);
 
   if (!seasonJson) {
@@ -117,7 +115,7 @@ export default function getSeasonData(seasonId) {
     // Resolve team properties, sort all teams, put the bench at the end
     const resolvedTeams = teams.map(resolveTeam).sort((a, b) => b.totalPoints - a.totalPoints);
     const benchTeam = resolvedTeams.find(({ id }) => id === "bench");
-    const rankedTeams = resolvedTeams.filter(({ id }) => id !== "bench").concat([benchTeam]);
+    const rankedTeams = resolvedTeams.filter(({ id }) => id !== "bench").reverse().concat([benchTeam]);
 
     return rankedTeams;
   };

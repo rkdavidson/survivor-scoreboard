@@ -18,7 +18,10 @@ import './global.css';
 import './index.css';
 
 // Season Data
-import getSeasonData from './data/getSeasonData';
+import { getSeason39Data, getSeasonData } from './data/getSeasonData';
+const season39 = getSeason39Data('s39');
+console.log('season39: ', season39);
+
 const season40 = getSeasonData('s40');
 console.log('season40: ', season40);
 
@@ -39,7 +42,6 @@ function App() {
         currentGameId={gameId}
         onChangeGame={setGameId}
       />
-      {/* <SeasonHeader season={season} /> */}
 
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
