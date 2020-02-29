@@ -2,9 +2,9 @@ import season from './season';
 import cast from './cast';
 
 // ⭐ Things that change every week
-import episode from './episodes/episode02';
-import homeGame from './games/home/home02';
-import workGame from './games/work/work02';
+import episode from './episodes/episode03';
+import homeGame from './games/home/home03';
+import workGame from './games/work/work03';
 
 export default {
   season,
