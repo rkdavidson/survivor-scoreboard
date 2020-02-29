@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://rkdavidson.github.io/survivor-scoreboard/static/css/main.a235d890.chunk.css",
-    "main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.e192d230.chunk.js",
-    "main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.e192d230.chunk.js.map",
+    "main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.22c199b1.chunk.js",
+    "main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.22c199b1.chunk.js.map",
     "runtime-main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/runtime-main.e5e9351c.js",
     "runtime-main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/runtime-main.e5e9351c.js.map",
     "static/js/2.cc472672.chunk.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.cc472672.chunk.js",
     "static/js/2.cc472672.chunk.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.cc472672.chunk.js.map",
     "index.html": "https://rkdavidson.github.io/survivor-scoreboard/index.html",
-    "precache-manifest.4e882ab6dd405716a8e32779c637bc60.js": "https://rkdavidson.github.io/survivor-scoreboard/precache-manifest.4e882ab6dd405716a8e32779c637bc60.js",
+    "precache-manifest.310a866b85dadbbf0cc297cfdd1a7a89.js": "https://rkdavidson.github.io/survivor-scoreboard/precache-manifest.310a866b85dadbbf0cc297cfdd1a7a89.js",
     "service-worker.js": "https://rkdavidson.github.io/survivor-scoreboard/service-worker.js",
     "static/css/main.a235d890.chunk.css.map": "https://rkdavidson.github.io/survivor-scoreboard/static/css/main.a235d890.chunk.css.map",
     "static/media/calendar.733f6495.svg": "https://rkdavidson.github.io/survivor-scoreboard/static/media/calendar.733f6495.svg",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.e5e9351c.js",
     "static/js/2.cc472672.chunk.js",
     "static/css/main.a235d890.chunk.css",
-    "static/js/main.e192d230.chunk.js"
+    "static/js/main.22c199b1.chunk.js"
   ]
 }
