@@ -9,7 +9,7 @@ const iconMap = {
 };
 
 function SeasonHeroHeader({ seasonDetails, games, currentGameId, onChangeGame }) {
-  const { number, name, displayDate } = seasonDetails;
+  const { number, name } = seasonDetails;
 
   return (
     <section className="">
@@ -29,7 +29,7 @@ function SeasonHeroHeader({ seasonDetails, games, currentGameId, onChangeGame })
             </span>
           </p>
         </div>
-        <div className="flex justify-between px-2 md:w-3/4 lg:w-1/2 xl:w-1/4 m-auto">
+        <div className="flex justify-between px-2 w-4/5 md:w-3/4 lg:w-1/2 xl:w-1/4 m-auto">
           {games.map(game => {
             const isActive = game.id === currentGameId;
             const Icon = iconMap[game.icon];

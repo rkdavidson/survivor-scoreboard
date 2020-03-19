@@ -3,7 +3,6 @@ import React from 'react';
 import PlayerFireStatus from './PlayerFireStatus';
 import { TribeNameSmall } from './TribeName';
 import { ReactComponent as BuoyIcon } from './zondicons/buoy.svg';
-import { ReactComponent as CloseIcon } from './zondicons/close.svg';
 
 const outPlayerPhotoStyle = {
   opacity: 0.85,
@@ -14,7 +13,7 @@ const outPlayerPhotoStyle = {
 function PlayerCircleCard(props) {
   const {
     id,
-    firstName, lastName, occupation, currentResidence, hometown,
+    firstName, lastName,
     tribe,
     hasFire,
     immunityIdols,
@@ -24,14 +23,14 @@ function PlayerCircleCard(props) {
     onJury
   } = props.player;
 
-  const borderColor = hasFire ? 'border-white' : 'border-white';
+  const borderColor = 'border-gray-100';
 
   return (
-    <div className={`w-1/4 mb-4 relative shadow-md bg-white border-2 ${borderColor} ${hasFire ? undefined : 'opacity-75'}`}>
+    <div className={`w-1/4 mb-4 relative shadow-sm rounded-lg bg-white border ${borderColor} ${hasFire ? undefined : 'opacity-75'}`}>
       <div className={`relative rounded-lg rounded-b-none overflow-hidden w-full pb-goldenratio`}>
         {/* Photo */}
         <img
-          className="absolute object-cover object-top w-32 h-32"
+          className="absolute object-cover object-top w-full h-full"
           src={`${process.env.PUBLIC_URL}/images/40/cast/${id}.jpg`}
           alt={`${firstName} ${lastName}`}
           style={!hasFire ? outPlayerPhotoStyle : undefined}
@@ -47,7 +46,7 @@ function PlayerCircleCard(props) {
 
       {/* Player Details */}
       <div className={`p-2 pb-3 text-center`}>
-        <p className={`font-black text-md`}>
+        <p className={`font-bold text-md`}>
           {firstName}
         </p>
         <TribeNameSmall tribe={tribe} />

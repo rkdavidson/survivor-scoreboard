@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+import { CookiesProvider, useCookies } from 'react-cookie';
 
 // Views
 import ScoresDashboard from './views/ScoresDashboard';
@@ -11,7 +12,6 @@ import PlayerBio from './views/PlayerBio';
 
 // Components
 import SeasonHeroHeader from './components/SeasonHeroHeader';
-import SeasonHeader from './components/SeasonHeader';
 
 // Local
 import './global.css';
@@ -30,35 +30,41 @@ const { details, cast, tribes, games } = season40;
 const developmentMode = window.location.hostname === 'localhost';
 
 function App() {
-  const [gameId, setGameId] = useState(season40.games[0].id);
-
+  const [cookies, setCookie] = useCookies(['gameId']);
+  const gameId = cookies.gameId || season40.games[0].id;
   const game = games.find(({ id }) => id === gameId);
 
-  return (
-    <Router basename={developmentMode ? undefined : "survivor-scoreboard"}>
-      <SeasonHeroHeader
-        seasonDetails={details}
-        games={games}
-        currentGameId={gameId}
-        onChangeGame={setGameId}
-      />
+  function handleChangeGame(newGameId) {
+    setCookie('gameId', newGameId, { path: '/' });
+  }
 
-      {/* A <Switch> looks through its children <Route>s and
+  return (
+    <CookiesProvider>
+      <Router basename={developmentMode ? undefined : "survivor-scoreboard"}>
+        <SeasonHeroHeader
+          seasonDetails={details}
+          games={games}
+          currentGameId={gameId}
+          onChangeGame={handleChangeGame}
+        />
+
+        {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path="/player/:playerId">
-          <PlayerBio cast={cast} />
-        </Route>
-        <Route path="/">
-          <ScoresDashboard
-            season={season40}
-            tribes={tribes}
-            cast={cast}
-            game={game}
-          />
-        </Route>
-      </Switch>
-    </Router>
+        <Switch>
+          <Route path="/player/:playerId">
+            <PlayerBio cast={cast} />
+          </Route>
+          <Route path="/">
+            <ScoresDashboard
+              season={season40}
+              tribes={tribes}
+              cast={cast}
+              game={game}
+            />
+          </Route>
+        </Switch>
+      </Router>
+    </CookiesProvider>
   );
 }
 

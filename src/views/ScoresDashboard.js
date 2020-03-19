@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { ReactComponent as ColumnIcon } from '../components/zondicons/view-column.svg';
-import { ReactComponent as TileIcon } from '../components/zondicons/view-tile.svg';
 import TeamScoreCards from '../components/TeamScoreCards';
 import { ReactComponent as CalendarIcon } from '../components/zondicons/calendar.svg';
 
 // -----------------------------------------------------------------
 
 function ScoresDashboard(props) {
-  const { season, cast, tribes, game } = props;
+  const { season, game } = props;
 
   return (
     <section className="container mx-auto pb-4 max-w-2xl">

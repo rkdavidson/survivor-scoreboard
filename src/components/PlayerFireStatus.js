@@ -5,12 +5,12 @@ function PlayerFireStatus({ style, className, hasFire, points = null }) {
 
   return (
     <div className={[
-      `flex justify-center items-center content-center -mt-4 rounded-full bg-white shadow`,
+      `flex justify-center items-center content-center -mt-4 rounded-full bg-yellow-100 shadow`,
       hasFire ? 'p-1 -mr-1' : 'h-6 px-2 mr-1',
       className
     ].join(' ')} style={style}>
       {hasFire && (
-        <FireIcon className="inline-block w-4 h-4 text-orange-400 fill-current" />
+        <FireIcon className="inline-block w-5 h-5 text-orange-400 fill-current" />
         // <span className="text-lg font-bold text-center tracking-tighter">
         //   🔥
         // </span>
