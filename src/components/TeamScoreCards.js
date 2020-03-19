@@ -1,26 +1,29 @@
 import React from 'react';
-import PlayerCard from '../components/PlayerCard';
-import PlayerCardTall from '../components/PlayerCardTall';
-import { ReactComponent as Trophy } from '../components/zondicons/trophy.svg';
+import PlayerCircleCard from './PlayerCircleCard';
+import { ReactComponent as Trophy } from './zondicons/trophy.svg';
 
 const rankingStrings = ['', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th'];
+const smallCaps = { fontVariant: 'small-caps' };
 
 export default function TeamScoreCards(props) {
-  const { owner, members, totalPoints, standing, layout } = props;
-  console.log('members:', members);
-  const CardComponent = layout === 'tile' ? PlayerCard : PlayerCardTall;
+  const { owner, members, totalPoints, standing } = props;
 
   return (
     <section className="pb-2 mb-8 shadow-lg bg-gray-100">
       {/* Team Title */}
-      <div className="flex justify-between items-center mb-6 py-6 pl-8 pr-4 bg-white shadow">
-        <h2 className="text-3xl font-black leading-none text-teal-900">
+      <div className="flex justify-between items-center mb-6 py-4 md:py-6 pl-8 pr-4 bg-white shadow">
+        <h2 className="text-3xl font-black leading-none text-teal-900" >
           {standing === 1 ? (
-            <span className="flex text-base font-bold text-teal-600 align-center items-center">
+            <span className="flex text-base font-heavy text-yellow-600 align-center items-center" style={smallCaps}>
               <Trophy className="inline-block w-4 h-4 fill-current text-orange-400 mr-1" /> 1st
             </span>
           ) : (
-              <span role="img" aria-label={rankingStrings[standing]} className="block text-base font-bold text-blue-600">
+              <span
+                role="img"
+                aria-label={rankingStrings[standing]}
+                className="block text-base font-bold text-blue-600"
+                style={smallCaps}
+              >
                 {rankingStrings[standing]}
               </span>
             )}
@@ -34,10 +37,10 @@ export default function TeamScoreCards(props) {
       {/* Team Players */}
       <section className="px-4">
         <div className="flex flex-wrap -mx-2">
-          <CardComponent player={members[0]} />
-          <CardComponent player={members[1]} />
-          <CardComponent player={members[2]} />
-          <CardComponent player={members[3]} />
+          <PlayerCircleCard player={members[0]} />
+          <PlayerCircleCard player={members[1]} />
+          <PlayerCircleCard player={members[2]} />
+          <PlayerCircleCard player={members[3]} />
         </div>
       </section>
     </section>

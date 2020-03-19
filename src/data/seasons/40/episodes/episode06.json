@@ -127,7 +127,9 @@
     "onEdgeOfExtinction": true,
     "fireTokens": 0,
     "immunityIdols": 0,
-    "advantages": ["Idol Nullifier"],
+    "advantages": [
+      "Idol Nullifier"
+    ],
     "onJury": false,
     "points": 7
   },

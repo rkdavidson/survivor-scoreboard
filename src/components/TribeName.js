@@ -4,8 +4,8 @@ export function TribeNameSmall({ tribe, showName = true }) {
   const { name, colors } = tribe;
 
   return (
-    <p className="text-lg font-bold leading-none">
-      <span className="rounded text-xs px-2 font-bold tracking-wide" style={{
+    <p className="font-bold text-xs tracking-wide">
+      <span className="rounded px-2" style={{
         background: colors.dark,
         color: colors.light,
       }}>

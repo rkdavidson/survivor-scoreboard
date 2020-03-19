@@ -9,13 +9,6 @@ import { ReactComponent as CalendarIcon } from '../components/zondicons/calendar
 
 function ScoresDashboard(props) {
   const { season, cast, tribes, game } = props;
-  const [layout, setLayout] = useState('column');
-
-  function handleChangeLayout(event) {
-    setLayout(layout === 'tile' ? 'column' : 'tile');
-  }
-
-  const IconComponent = layout === 'tile' ? ColumnIcon : TileIcon;
 
   return (
     <section className="container mx-auto pb-4 max-w-2xl">
@@ -29,11 +22,6 @@ function ScoresDashboard(props) {
             </span>
           </p>
         </div>
-
-        <button className="text-center leading-relaxed" onClick={handleChangeLayout}>
-          <span className="mr-3">View as</span>
-          <IconComponent className="inline-block w-6 h-6 fill-current" />
-        </button>
       </div>
 
       {game.teams.map((team, index) => {
@@ -44,7 +32,6 @@ function ScoresDashboard(props) {
             owner={team.owner}
             members={team.members}
             standing={team.id === 'bench' ? 0 : index + 1}
-            layout={layout}
           />
         );
       })}
