@@ -15,7 +15,7 @@
     "hasFire": false,
     "tribe": "sele",
     "onEdgeOfExtinction": true,
-    "fireTokens": 0,
+    "fireTokens": 1,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
@@ -37,7 +37,7 @@
     "hasFire": false,
     "tribe": "dakal",
     "onEdgeOfExtinction": true,
-    "fireTokens": 0,
+    "fireTokens": 1,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
@@ -59,7 +59,7 @@
     "hasFire": false,
     "tribe": "dakal",
     "onEdgeOfExtinction": true,
-    "fireTokens": 0,
+    "fireTokens": 1,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
@@ -70,9 +70,11 @@
     "hasFire": true,
     "tribe": "dakal",
     "onEdgeOfExtinction": false,
-    "fireTokens": 0,
+    "fireTokens": 1,
     "immunityIdols": 0,
-    "advantages": [],
+    "advantages": [
+      "Safety without Power"
+    ],
     "onJury": false,
     "points": 0
   },
@@ -103,7 +105,7 @@
     "hasFire": false,
     "tribe": "dakal",
     "onEdgeOfExtinction": true,
-    "fireTokens": 1,
+    "fireTokens": 4,
     "immunityIdols": 0,
     "advantages": [],
     "onJury": false,
@@ -162,7 +164,9 @@
     "onEdgeOfExtinction": false,
     "fireTokens": 1,
     "immunityIdols": 0,
-    "advantages": [],
+    "advantages": [
+      "Steal a Vote"
+    ],
     "onJury": false,
     "points": 0
   },
@@ -172,7 +176,7 @@
     "tribe": "yara",
     "onEdgeOfExtinction": false,
     "fireTokens": 1,
-    "immunityIdols": 0,
+    "immunityIdols": 1,
     "advantages": [],
     "onJury": false,
     "points": 0

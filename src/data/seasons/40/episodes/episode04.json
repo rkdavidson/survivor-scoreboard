@@ -72,7 +72,9 @@
     "onEdgeOfExtinction": false,
     "fireTokens": 0,
     "immunityIdols": 0,
-    "advantages": [],
+    "advantages": [
+      "Safety without Power"
+    ],
     "onJury": false,
     "points": 0
   },
