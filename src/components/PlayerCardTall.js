@@ -51,7 +51,7 @@ function PlayerCardTall(props) {
 
         {/* Player Details */}
         <div className={`p-2 pb-3 text-center ${hasFire ? 'bg-white' : 'bg-gray-100'}`}>
-          <p className={`font-bold`}>
+          <p className={`font-bold text-sm`}>
             {firstName}
           </p>
           <TribeNameSmall tribe={tribe} />

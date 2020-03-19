@@ -23,6 +23,15 @@
         "light": "rgb(190, 200, 255)",
         "dark": "rgb(0, 0, 255)"
       }
+    },
+    {
+      "id": "yara",
+      "active": true,
+      "name": "Yara",
+      "colors": {
+        "light": "rgb(200, 240, 190)",
+        "dark": "rgb(24, 192, 0)"
+      }
     }
   ]
 }
