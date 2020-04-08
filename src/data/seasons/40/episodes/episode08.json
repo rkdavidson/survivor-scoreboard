@@ -1,0 +1,226 @@
+[
+  {
+    "id": "adam",
+    "hasFire": true,
+    "tribe": "yara",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 1,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "amber",
+    "hasFire": false,
+    "tribe": "sele",
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 2
+  },
+  {
+    "id": "ben",
+    "hasFire": true,
+    "tribe": "yara",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 1,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "danni",
+    "hasFire": false,
+    "tribe": "dakal",
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 3
+  },
+  {
+    "id": "denise",
+    "hasFire": true,
+    "tribe": "dakal",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 2,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "ethan",
+    "hasFire": false,
+    "tribe": "dakal",
+    "onEdgeOfExtinction": true,
+    "fireTokens": 1,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 4
+  },
+  {
+    "id": "jeremy",
+    "hasFire": true,
+    "tribe": "dakal",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 2,
+    "immunityIdols": 0,
+    "advantages": [
+      "Safety without Power"
+    ],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "kim",
+    "hasFire": true,
+    "tribe": "dakal",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 1,
+    "immunityIdols": 1,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "michele",
+    "hasFire": true,
+    "tribe": "sele",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 4,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "natalie",
+    "hasFire": false,
+    "tribe": "dakal",
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
+    "immunityIdols": 1,
+    "advantages": [],
+    "onJury": false,
+    "points": 1
+  },
+  {
+    "id": "nick",
+    "hasFire": true,
+    "tribe": "sele",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 3,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "parvati",
+    "hasFire": false,
+    "tribe": "sele",
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 7
+  },
+  {
+    "id": "rob",
+    "hasFire": false,
+    "tribe": "yara",
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
+    "immunityIdols": 1,
+    "advantages": [],
+    "onJury": false,
+    "points": 6
+  },
+  {
+    "id": "sandra",
+    "hasFire": false,
+    "tribe": "dakal",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 0,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 8
+  },
+  {
+    "id": "sarah",
+    "hasFire": true,
+    "tribe": "yara",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 1,
+    "immunityIdols": 0,
+    "advantages": [
+      "Steal a Vote"
+    ],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "sophie",
+    "hasFire": true,
+    "tribe": "yara",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 2,
+    "immunityIdols": 1,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "tony",
+    "hasFire": true,
+    "tribe": "dakal",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 1,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "tyson",
+    "hasFire": true,
+    "tribe": "sele",
+    "onEdgeOfExtinction": false,
+    "fireTokens": 0,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 0
+  },
+  {
+    "id": "wendell",
+    "hasFire": false,
+    "tribe": "sele",
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 10
+  },
+  {
+    "id": "yul",
+    "hasFire": false,
+    "tribe": "sele",
+    "onEdgeOfExtinction": true,
+    "fireTokens": 0,
+    "immunityIdols": 0,
+    "advantages": [],
+    "onJury": false,
+    "points": 9
+  }
+]
