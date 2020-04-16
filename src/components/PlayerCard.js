@@ -24,6 +24,7 @@ function PlayerCard(props) {
     hasFire,
     hiddenIdols,
     points,
+    advantages,
     onJury
   } = props.player;
   let history = useHistory();
@@ -59,6 +60,7 @@ function PlayerCard(props) {
               {firstName}{' '}
               <span style={{ letterSpacing: '-0.3em' }}>
                 {`🗿`.repeat(hiddenIdols)}
+                {advantages.length && `📜 ${advantages.join(',')}`}
               </span>
             </p>
 
