@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://rkdavidson.github.io/survivor-scoreboard/static/css/main.9aa49430.chunk.css",
-    "main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.308080a1.chunk.js",
-    "main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.308080a1.chunk.js.map",
+    "main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.ba72a897.chunk.js",
+    "main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/main.ba72a897.chunk.js.map",
     "runtime-main.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/runtime-main.baf4d52c.js",
     "runtime-main.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/runtime-main.baf4d52c.js.map",
     "static/js/2.f3c7521a.chunk.js": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.f3c7521a.chunk.js",
     "static/js/2.f3c7521a.chunk.js.map": "https://rkdavidson.github.io/survivor-scoreboard/static/js/2.f3c7521a.chunk.js.map",
     "index.html": "https://rkdavidson.github.io/survivor-scoreboard/index.html",
-    "precache-manifest.528da9743aae193235180ba9cea8f234.js": "https://rkdavidson.github.io/survivor-scoreboard/precache-manifest.528da9743aae193235180ba9cea8f234.js",
+    "precache-manifest.84b24497e3d8a5a72edeffaa930b0f71.js": "https://rkdavidson.github.io/survivor-scoreboard/precache-manifest.84b24497e3d8a5a72edeffaa930b0f71.js",
     "service-worker.js": "https://rkdavidson.github.io/survivor-scoreboard/service-worker.js",
     "static/css/main.9aa49430.chunk.css.map": "https://rkdavidson.github.io/survivor-scoreboard/static/css/main.9aa49430.chunk.css.map",
     "static/media/buoy.70520b86.svg": "https://rkdavidson.github.io/survivor-scoreboard/static/media/buoy.70520b86.svg",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.baf4d52c.js",
     "static/js/2.f3c7521a.chunk.js",
     "static/css/main.9aa49430.chunk.css",
-    "static/js/main.308080a1.chunk.js"
+    "static/js/main.ba72a897.chunk.js"
   ]
 }
