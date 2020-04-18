@@ -5,8 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import { CookiesProvider, useCookies } from 'react-cookie';
+import ApolloClient, { gql } from 'apollo-boost';
+import { ApolloProvider } from '@apollo/react-hooks';
 
 // Views
+import AdminDashboard from './views/AdminDashboard';
 import ScoresDashboard from './views/ScoresDashboard';
 import PlayerBio from './views/PlayerBio';
 
@@ -20,14 +23,31 @@ import './index.css';
 // Season Data
 import { getSeason39Data, getSeasonData } from './data/getSeasonData';
 const season39 = getSeason39Data('s39');
-console.log('season39: ', season39);
-
 const season40 = getSeasonData('s40');
+console.log('season39: ', season39);
 console.log('season40: ', season40);
 
 const { details, cast, tribes, games } = season40;
-
 const developmentMode = window.location.hostname === 'localhost';
+
+// Apollo
+const client = new ApolloClient({
+  uri: 'http://localhost:4000',
+});
+
+client
+  .query({
+    query: gql`
+      {
+        seasons {
+          _id
+          name
+          number
+        }
+      }
+    `
+  })
+  .then(result => console.log(result));
 
 function App() {
   const [cookies, setCookie] = useCookies(['gameId']);
@@ -39,32 +59,35 @@ function App() {
   }
 
   return (
-    <CookiesProvider>
-      <Router basename={developmentMode ? undefined : "survivor-scoreboard"}>
-        <SeasonHeroHeader
-          seasonDetails={details}
-          games={games}
-          currentGameId={gameId}
-          onChangeGame={handleChangeGame}
-        />
+    <ApolloProvider client={client}>
+      <CookiesProvider>
+        <Router basename={developmentMode ? undefined : "survivor-scoreboard"}>
+          <SeasonHeroHeader
+            seasonDetails={details}
+            games={games}
+            currentGameId={gameId}
+            onChangeGame={handleChangeGame}
+          />
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/player/:playerId">
-            <PlayerBio cast={cast} />
-          </Route>
-          <Route path="/">
-            <ScoresDashboard
-              season={season40}
-              tribes={tribes}
-              cast={cast}
-              game={game}
-            />
-          </Route>
-        </Switch>
-      </Router>
-    </CookiesProvider>
+          <Switch>
+            <Route path="/admin">
+              <AdminDashboard />
+            </Route>
+            <Route path="/player/:playerId">
+              <PlayerBio cast={cast} />
+            </Route>
+            <Route path="/">
+              <ScoresDashboard
+                season={season40}
+                tribes={tribes}
+                cast={cast}
+                game={game}
+              />
+            </Route>
+          </Switch>
+        </Router>
+      </CookiesProvider>
+    </ApolloProvider>
   );
 }
 

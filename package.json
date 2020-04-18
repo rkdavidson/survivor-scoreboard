@@ -4,6 +4,9 @@
   "homepage": "http://rkdavidson.github.io/survivor-scoreboard",
   "private": true,
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "apollo-boost": "^0.4.7",
+    "graphql": "^15.0.0",
     "react": "^16.11.0",
     "react-cookie": "^4.0.3",
     "react-dom": "^16.11.0",
