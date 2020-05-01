@@ -84,7 +84,7 @@
     "fireTokens": 0,
     "immunityIdols": 0,
     "advantages": [],
-    "onJury": false,
+    "onJury": true,
     "points": 14
   },
   {
@@ -172,7 +172,7 @@
     "fireTokens": 0,
     "immunityIdols": 1,
     "advantages": [],
-    "onJury": false,
+    "onJury": true,
     "points": 13
   },
   {

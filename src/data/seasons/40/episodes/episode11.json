@@ -172,7 +172,7 @@
     "fireTokens": 0,
     "immunityIdols": 1,
     "advantages": [],
-    "onJury": false,
+    "onJury": true,
     "points": 13
   },
   {
